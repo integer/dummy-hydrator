@@ -1,0 +1,27 @@
+{
+  "name": "integer/dummy-hydrator",
+  "description": "Simple package for strict initialization object with an array.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Kácha",
+      "email": "int@integerovo.info"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Integer\\": "src/"
+    }
+  },
+  "scripts": {
+    "da": "composer dump-autoload",
+    "tests": "php vendor/bin/phpunit tests",
+    "coverage": "php vendor/bin/phpunit --whitelist src/ --coverage-text tests"
+  }
+}
